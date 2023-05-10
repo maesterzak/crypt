@@ -260,7 +260,7 @@ export default function Home() {
 
 
 
-        <div className='marginTop mb-[20px] mb-10 flex flex-col items-center justify-center'>
+        <div className='marginTop mb-[20px] mt-[30px] flex flex-col items-center justify-center'>
           <h2 className='text-center textColor1 heading2 mb-6'>TOKENOMICS</h2>
           <div className='w-[80%] md:w-[35%]'>
             <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/tokenomics.png'} />
