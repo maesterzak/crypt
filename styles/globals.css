@@ -179,11 +179,11 @@ body{
 .body4{font-size:  13px !important}
 .body5{font-size:  12px !important}
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
     .hero{
     
     
         height: 73vh;
         
     }
-}
+} */
