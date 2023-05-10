@@ -97,6 +97,7 @@ body{
     height: 83vh;
     width: 100vw;
     position: relative;
+    overflow-x: hidden;
 }
 .hero-background{
     width: 100%;
@@ -180,10 +181,7 @@ body{
 .body5{font-size:  12px !important}
 
 /* @media (max-width: 960px) {
-    .hero{
-    
-    
-        height: 73vh;
-        
+    .marginTop{
+
     }
 } */

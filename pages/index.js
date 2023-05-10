@@ -211,7 +211,7 @@ export default function Home() {
         </div>
 
 
-        <div className='w-[100] h-[70vh] mt-9 relative'>
+        <div className='w-[100] h-[70vh] mt-9  relative'>
           <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/samplebg2.png'} />
           <div className='absolute w-[100%] top-0 flex justify-center'>
             <div className='w-[95%] md:w-[60%] '>
@@ -241,7 +241,7 @@ export default function Home() {
 
                   </div>
 
-                  <div className='flex-2 flex justify-center items-center'>
+                  <div className='flex-2 mb-[20px] flex justify-center items-center'>
                     <Image width={200} height={200} src={'/img/dogsample.png'} />
                   </div>
 
@@ -260,7 +260,7 @@ export default function Home() {
 
 
 
-        <div className='marginTop mb-10 flex flex-col items-center justify-center'>
+        <div className='marginTop mb-[20px] mb-10 flex flex-col items-center justify-center'>
           <h2 className='text-center textColor1 heading2 mb-6'>TOKENOMICS</h2>
           <div className='w-[80%] md:w-[35%]'>
             <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/tokenomics.png'} />
