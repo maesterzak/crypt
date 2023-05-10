@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import Link from 'next/link'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,101 +16,283 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+      <nav className='flex justify-between mt-5 h-[5vh] md:h-[7vh] px-6'>
+        <div className='flex gap-3 items-center'>
+          <div><span><Image width={55} height={55} src={'/img/dogsample.png'} /></span></div>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+            <span className='text-textColor1 heading5 font-semibold'>ARBPUP</span>
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+        <div className='flex gap-10 '>
+          <button className='text-white buttonBackground1 px-6 rounded-[10px] hidden md:block'>Trade Now</button>
+          <button className='bg-[#BD0000] text-white  px-4 rounded-[10px]'>Connect Wallet</button>
         </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+      </nav>
+      <div className='hero relative' >
+        {/* <div className='hero-background'>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+          <div className='h-[50%] w-[100%]'>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+          </div>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          <div className='h-[50%] w-[100%]'>
+            <img className='hero-bg-img' src={'/img/samplebg.png'} />
+
+          </div>
+        </div> */}
+        <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/samplebg.png'} />
+
+        <div className='absolute top-0 w-[100%] flex flex-col justify-center items-center'>
+          <div className='w-[90%] md:w-[40%] flex justify-center flex-col gap-6 '>
+            <h1 className='text-center textColor1 heading mt-10'>AIRPUB defining <br /> Arbitrum</h1>
+            <div className='flex justify-center'>
+              <button className='text-white buttonBackground1 w-[100px] rounded-[5px] p-3'>Trade Now</button>
+            </div>
+
+            <div className='flex justify-center'>
+              <Image width={100} height={100} src={'/img/dogsample.png'} />
+            </div>
+
+            <div className='flex  justify-around'>
+              {/* <div className='flex-1 flex-col justify-center items-center'>
+                <div className='flex  mb-3 justify-center'>
+                  <button className='text-white buttonBackground1 w-[170px] rounded-[5px] p-3'>Not Connected</button>
+                </div>
+
+                <div className='w-[200px] '>
+                  <h3 className='text-textColor1 mb-3 body3'>GOT ARB AIRDROP</h3>
+                  <span className='text-white flex justify-center body4 text-center'>Claim ARBPUP tokens right away. Limited quantity available ! ! !</span>
+
+                </div>
+
+
+              </div> */}
+
+              <div className=' flex-col justify-center items-center'>
+                <div className='flex justify-center  mb-3'>
+                  <button className='text-white buttonBackground2 w-[150px] rounded-[5px] p-3'>Not Connected</button>
+                </div>
+                <div className='w-[200px]  flex justify-center p-2'>
+                  <div>
+                    <h3 className='text-textColor1 mb-3 body3 text-center'>GOT ARB AIRDROP</h3>
+                    <p className='text-white flex body4 text-center'>Claim ARBPUP tokens right away. Limited quantity available ! ! !</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className=' flex-col justify-center items-center'>
+                <div className='flex justify-center  mb-3'>
+                  <button className='text-white buttonBackground2 w-[150px] rounded-[5px] p-3'>Not Connected</button>
+                </div>
+                <div className='w-[200px] p-2'>
+                  <h3 className='text-textColor1 mb-3 body3 text-center'>DID NOT GET ARB AIRDROP?</h3>
+                  <p className='text-white flex body4 text-center'>Get 10% of every claim whether you got arbitrum airdrop or not</p>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
         </div>
-      </main>
+
+
+        <div className='mt-[60px] px-5 flex justify-center flex-col items-center'>
+          <h2 className='text-center textColor1 heading2 mb-6'>Staking</h2>
+
+          <div className='md:w-[60%] flex justify-center '>
+            <div className='flex flex-col md:flex-row justify-between'>
+
+              <div className='mh-[80vh]  md:w-[45%] div-border overflow-hidden'>
+                <div className='h-[auto] flex text-white  bg-color3 p-3'>
+
+                  <div className='flex-1 '>
+                    <h2 className='heading3'>Earn ARBPUP</h2>
+                    <p className='mt-2 body5'>Stake LP tokens from providing <br /> liquidity for ARBPUP and Claim <br /> ARBPUP tokens every 24 hours</p>
+
+
+                  </div>
+                  <div className='flex-2  h-[100%] justify-center flex items-center'>
+                    <Image width={70} height={70} src={'/img/dogsample.png'} />
+                  </div>
+
+                </div>
+
+                <div className='mt-5 text-white px-3'>
+                  <div className='flex justify-between'>
+                    <div >
+                      <p className='heading6'>Total Claimed</p>
+                    </div>
+                    <div>
+                      <p className='heading7'>0</p>
+                      <p className='text-color4'>~ $0</p>
+
+                    </div>
+                  </div>
+
+                  <div className='flex justify-between mt-3'>
+                    <div >
+                      <p className='heading6'>Total Staked</p>
+                    </div>
+                    <div>
+                      <p className='heading7'>0</p>
+                      <p className='text-color4'>~ $0</p>
+
+                    </div>
+                  </div>
+
+                  <div className='flex justify-between mt-3'>
+                    <div >
+                      <p className='heading7'>CLaimable</p>
+                      <p className='heading7'>0</p>
+                      <p className='text-color4'>~ $0</p>
+                    </div>
+                    <div>
+                      <button className='text-white buttonBackground2  rounded-[5px] p-3'>Harvest</button>
+
+                    </div>
+                  </div>
+
+                  <div className='flex  mt-6 justify-center'>
+                    <button className='text-white buttonBackground2 w-[200px] rounded-[5px] p-3'>Not Connected</button>
+                  </div>
+
+                  <div className='flex justify-between mt-6'>
+                    <div >
+                      <p className='body7'>Total Staked Tokens in Pool:</p>
+                    </div>
+                    <div>
+                      <p className='body7'>0</p>
+                      <p className='text-color4'>~ $0</p>
+
+                    </div>
+                  </div>
+
+                  <div className='flex justify-between mt-6'>
+                    <div >
+                      <p className='body7'>Reward Tokens in Pool:</p>
+                    </div>
+                    <div>
+                      <p className='body7'>0</p>
+                      <p className='text-color4'>~ $0</p>
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+
+              </div>
+
+              <div className='md:h-[80vh] flex flex-col md:w-[45%] p-3  justify-center'>
+                <h3 className='textColor1 text-heading4'>Steps</h3>
+                <ul className='gap-7 flex flex-col text-white body3 list-decimal px-9 mt-3'>
+
+                  <li> Buy ARBPUP from Uniswap using the trade now button on this page</li>
+                  <li> Visit the Pool page at Uniswap and provide liquidity to the ARB/ARBPUP PAIR. Link</li>
+                  <li> Return to this page and enable the smart contract.</li>
+                  <li> Stake the LP tokens and begin claiming rewards every 24hrs</li>
+                </ul>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className='w-[100] h-[70vh] mt-9 relative'>
+          <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/samplebg2.png'} />
+          <div className='absolute w-[100%] top-0 flex justify-center'>
+            <div className='w-[95%] md:w-[60%] '>
+              <div className='md:w-[90%] text-white p-4 flex flex-col gap-11'>
+                <h2 className='text-center textColor1 heading'>ABOUT ARBIE..PUPPY..</h2>
+                <p className='body1'>Like the legendary Doge Token, ARBPUP is here to be a guide and companion for every single community member as they explore the Arbitrum universe.</p>
+                <div className='flex flex-col md:flex-row body1 '>
+                  <div className='flex-1 flex flex-col gap-11'>
+
+
+                    <div>
+                      <h3 className='text-textColor1 heading5'>6% Total Tax</h3>
+                      <p>3% Rewards</p>
+                      <p>3% Marketing</p>
+                    </div>
+
+                    <div className='md:w-[80%]'>
+                      <h3 className='text-textColor1 heading5'>LONGETIVITY</h3>
+                      <p>ARBPUP is a long term dedicated project to the community. We seek to achieve long term objectives and collaboration within Arbitrum Ecosystem.</p>
+
+                    </div>
+
+                    <div className='mb-8'>
+                      <button className='text-white buttonBackground1 w-[170px] rounded-[5px] p-3'>Trade Now</button>
+                    </div>
+
+
+                  </div>
+
+                  <div className='flex-2 flex justify-center items-center'>
+                    <Image width={200} height={200} src={'/img/dogsample.png'} />
+                  </div>
+
+                </div>
+
+
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div className='marginTop mb-10 flex flex-col items-center justify-center'>
+          <h2 className='text-center textColor1 heading2 mb-6'>TOKENOMICS</h2>
+          <div className='w-[80%] md:w-[35%]'>
+            <Image width={500} height={500} style={{ width: '100%', height: '100%' }} src={'/img/tokenomics.png'} />
+          </div>
+
+        </div>
+
+
+
+
+        <div className='mt-10 flex flex-col justify-center items-center'>
+          <div className='w-[90%] mb-10 h-[7px] bg-[#BD0000]'>
+
+          </div>
+
+          <div className='flex-col md:flex-row flex w-[90%] justify-center md:justify-between '>
+            <div className=' flex justify-center'>
+              <span className='textcolor2 heading3'>ARBPUP</span>
+            </div>
+            <div className='flex body3 justify-center items-center text-white gap-7'>
+              <Link href={'#'}>Arbscan</Link>
+              <Link href={'#'}>Twitter</Link>
+              <Link href={'#'}>Telegram</Link>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div >
+
     </>
   )
 }
